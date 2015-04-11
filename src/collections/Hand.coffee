@@ -19,7 +19,8 @@ class window.Hand extends Backbone.Collection
     @trigger('goneBust', @)
 
   checkScore: ->
-    if @minScore() > 21 then @busted()
+    if !@isDealer
+      if @minScore() > 21 then @busted()
 
   scores: ->
     # The scores are an array of potential scores.
@@ -40,11 +41,8 @@ class window.Hand extends Backbone.Collection
 
     else
       @hit() while (@minScore() + 10) <= 17
-      if @minScore() + 10 > 21
+      if (@minScore() + 10) > 21
         @hit() while @minScore() < 17
 
-    if @minScore() > 21
-      @busted()
-    else
-      console.log 'dealer is now done'
-      @trigger('dealerDone', @)
+
+    @trigger('dealerDone', @)

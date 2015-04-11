@@ -1,18 +1,38 @@
 <html>
   <head>
     <title>Blackjack</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
     <link href="styles/app.css" rel="stylesheet" type="text/css" media="screen">
   </head>
   <body>
+    <header class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Blackjack</a>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 main-col">
+
+
+
+      </div>
+    </div>
+    <!-- <div id="main" class="container"> -->
+
     <script src="lib/jquery.js"></script>
     <script src="lib/underscore.js"></script>
     <script src="lib/backbone.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="compiled/src/models/Card.js"></script>
     <script src="compiled/src/collections/Hand.js"></script>
     <script src="compiled/src/collections/Deck.js"></script>
+    <script src="compiled/src/models/GameOver.js"></script>
     <script src="compiled/src/models/App.js"></script>
 
+    <script src="compiled/src/views/GameOverView.js"></script>
     <script src="compiled/src/views/CardView.js"></script>
     <script src="compiled/src/views/HandView.js"></script>
     <script src="compiled/src/views/AppView.js"></script>

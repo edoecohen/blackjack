@@ -1,16 +1,84 @@
-.card img{
+body {
+  background-color: #282828;
+}
+
+.revealedCard {
   float: left;
   border: solid 1px black;
   width: 100px;
   border-radius: 5px;
   height: 140px;
   margin-right: 20px;
+  background-size: cover;
 }
 
 .covered {
-  background-color: black;
+  background: black;
 }
 
 .hand {
   overflow: auto;
+}
+
+.navbar {
+  background: black;
+  color: white;
+}
+.navbar a {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main-col {
+  margin-top: 100px;
+  color: white;
+}
+
+.playingTable {
+  background-image: url('../img/table.jpg');
+  background-size: cover;
+  background-repeat: none;
+  height: 530px;
+  padding: 30px 50px;
+  border-radius: 30px;
+}
+.player-hand-container {
+  margin-top: 30px;
+}
+.buttons {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.play-btn {
+  font-size: 28px;
+  background: rgb(110, 25, 25);
+  width: 200px;
+  margin-right: 30px;
+}
+
+.btn:hover {
+  color: white;
+  background: rgb(81, 12, 12);
+}
+
+.gameOverWin {
+  display: block;
+}
+
+.gameOverLose {
+  display: none;
+}
+
+.gameOverDraw {
+  display: none;
+}
+
+.gameOverBust {
+  display: none;
+}
+
+.modal {
+  color: black;
 }
